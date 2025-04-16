@@ -4,6 +4,7 @@
   margin-inline: auto;
   padding: 0 32px;
   min-height: calc(100vh - 176px);
+  position: relative;
 }
 .intro {
   margin-bottom: 20px;
@@ -76,8 +77,42 @@
   font-weight: 400;
   color: var(--grey-text-color);
 }
+.scroll-down {
+  display: flex;
+  justify-content: center;
+}
+.circle-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: rgb(35, 35, 35);
+  position: absolute;
+  bottom: 24px;
+  box-shadow: 0px 0px 8px 8px grey;
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 2px 2px rgba(116, 116, 116, 0.275);
+  }
+  25% {
+    box-shadow: 0px 0px 8px 6px rgba(128, 128, 128, 0.512);
+  }
+  100% {
+    box-shadow: 0px 0px 2px 2px rgba(116, 116, 116, 0.275);
+  }
+}
+.circle-container img {
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 1280px) {
-  .intro img{
+  .intro img {
     width: 100px;
     margin-left: -20px;
   }
@@ -95,7 +130,7 @@
   }
 }
 @media (max-width: 1024px) {
-  .intro img{
+  .intro img {
     width: 90px;
     margin-left: -20px;
   }
@@ -136,7 +171,7 @@
     padding: 0 20px;
   }
   .intro img {
-    width:60px;
+    width: 60px;
     margin-left: -10px;
   }
   .intro .hey {
@@ -148,7 +183,7 @@
   .profession p {
     font-size: 16px;
   }
-  .specialized{
+  .specialized {
     margin-bottom: 36px;
   }
   .specialized p {

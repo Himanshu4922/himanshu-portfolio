@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Header from "./../components/Header";
 import IntroSection from "./../components/IntroSection";
 import AboutSection from "./../components/AboutSection";
@@ -7,14 +7,16 @@ import HobbySection from "./../components/HobbySection";
 import FooterSection from "./../components/FooterSection";
 
 function Home() {
+  const aboutRef = useRef(null);
+
   useEffect(function () {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <IntroSection />
-      <AboutSection />
+      <IntroSection aboutRef={aboutRef}/>
+      <AboutSection aboutRef={aboutRef}/>
       <ProjectsSection />
       <HobbySection />
       <FooterSection />

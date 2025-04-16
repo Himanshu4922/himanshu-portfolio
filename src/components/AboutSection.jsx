@@ -3,10 +3,11 @@ import profileImg from "../assets/profile1.jpg";
 import dots from "../assets/dots.svg";
 import styles from "./AboutSection.module.css";
 
-function AboutSection() {
+function AboutSection({aboutRef}) {
+
   return (
     <>
-      <section className={styles["about-section"]}>
+      <section className={styles["about-section"]} ref={aboutRef}>
         <div className={styles["about-text"]}>
           <h2>⚡ About Me</h2>
           <p>

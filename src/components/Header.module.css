@@ -12,7 +12,7 @@
   position: sticky;
   top: 0px;
   background-color: var(--background-color);
-  z-index: 10;
+  z-index: 30;
 }
 .header .logo {
   color: var(--text-color);
@@ -22,9 +22,6 @@
   text-decoration: none;
   outline: none;
   transition: color 0.1s ease-in-out;
-}
-.header .logo:hover {
-  color: var(--highlight-color);
 }
 .header .logo span {
   color: var(--grey-text-color);
@@ -46,6 +43,9 @@
 .nav a:hover {
   color: var(--highlight-color);
 }
+.nav a:active {
+  color: var(--text-color); /* or reset it to default */
+}
 .nav a button {
   background-color: var(--button-background-color);
   border: none;
@@ -61,6 +61,9 @@
   color: var(--highlight-color);
   cursor: pointer;
   background-color: var(--button-background-color-hover);
+}
+.nav a button:active{
+  color: var(--text-color);
 }
 
 /* Mobile landscape */

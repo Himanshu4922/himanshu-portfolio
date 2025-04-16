@@ -5,9 +5,22 @@ import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import dotsImg from "../assets/dots.svg";
 import Button from "./Button";
+import downArrowImg from "../assets/downArrow.svg";
 import { ReactTyped } from "react-typed";
 
-function IntroSection() {
+function IntroSection({ aboutRef }) {
+
+  const scrollToAbout = () => {
+    if (aboutRef?.current) {
+      const yOffset = -90;
+      const y =
+        aboutRef.current.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -77,6 +90,11 @@ function IntroSection() {
               }}
             />
           </Button>
+        </div>
+        <div className={styles["scroll-down"]}>
+          <div className={styles["circle-container"]} onClick={scrollToAbout}>
+            <img src={downArrowImg} alt="↓" />
+          </div>
         </div>
       </section>
     </>
