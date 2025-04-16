@@ -99,7 +99,7 @@ export function ProjectsContextProvider({ children }) {
           bgColor: "rgba(144, 206, 244, 0.337)",
         },
       ],
-      link: "https://focus-on-today-lac.vercel.app/",
+      link: "https://himanshu-portfolio-one.vercel.app/",
       description:
         "A personal portfolio website to showcase my projects, skills, and experiences with a responsive design and smooth user experience.",
       projectImage: portfolioImg,
