@@ -21,7 +21,7 @@ function Header() {
     <>
       <header className={styles["header"]}>
         <Link to="/" className={styles["logo"]}>
-          <span>{"{"}</span>&nbsp;H&nbsp;<span>{"}"}</span>
+          <span>{"{"}</span>H<span>{"}"}</span>
         </Link>
         {isMobile ? (
           <div className={styles["hamburger-container"]}>
