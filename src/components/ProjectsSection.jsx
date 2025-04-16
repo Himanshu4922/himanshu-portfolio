@@ -2,10 +2,12 @@ import { useContext } from "react";
 import styles from "./ProjectsSection.module.css";
 import { Link } from "react-router";
 import ProjectCard from "./ProjectCard";
-import { ProjectsContext } from "./../context/ProjectsContext";
+import {
+  useProjectsContext,
+} from "./../context/ProjectsContext";
 
 function ProjectsSection() {
-  const projects = useContext(ProjectsContext);
+  const projects = useProjectsContext();
 
   return (
     <>

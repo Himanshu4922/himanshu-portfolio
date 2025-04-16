@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import restCountriesImg from "../assets/restCountriesImg.png";
 import focusOnTodayImg from "../assets/focusOnTodayImg.png";
 import jsIcon from "../assets/jsIcon.svg";
@@ -111,4 +111,8 @@ export function ProjectsContextProvider({ children }) {
       {children}
     </ProjectsContext.Provider>
   );
+}
+
+export function useProjectsContext() {
+  return useContext(ProjectsContext);
 }
