@@ -1,0 +1,56 @@
+.socials-btn {
+  padding: 10px 14px;
+  background-color: var(--button-background-color);
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-right: 16px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  /* animation */
+  transform: translateY(-20%);
+  animation-name: slide-down;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  opacity: 0;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.socials-btn:hover {
+  background-color: var(--button-background-color-hover);
+}
+
+@media (max-width: 1024px) {
+  .socials-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width:768px){
+  .socials-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+}
+@media (max-width:768px){
+  .socials-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+}

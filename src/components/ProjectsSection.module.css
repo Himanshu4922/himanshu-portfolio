@@ -1,0 +1,83 @@
+.projects-section {
+  margin-block: 128px;
+  margin-inline: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 18px 32px;
+  gap: 56px;
+}
+.projects-text h2 {
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+.projects-text p {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--grey-text-color);
+  margin-bottom: 8px;
+}
+.projects-text a {
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--highlight-color);
+  line-height: 30px;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .projects-section {
+    margin-block: 64px;
+    gap: 28px;
+  }
+  .projects-text h2 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  .projects-text p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+  .projects-text a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 892px) {
+  .projects-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .projects-section {
+    margin-block: 32px;
+  }
+  .projects-text h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .projects-text p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .projects-text a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 18px 20px;
+    margin-block: 24px;
+  }
+  .projects-text h2 {
+    font-size: 16px;
+  }
+}

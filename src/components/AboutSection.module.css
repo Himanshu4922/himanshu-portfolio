@@ -1,0 +1,93 @@
+.about-section {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+}
+.about-text {
+  width: 100%;
+}
+.about-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+.about-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-text-color);
+  line-height: 24px;
+}
+.picture {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.picture .dots-svg {
+  width: 148px;
+  margin-left: 292px;
+  margin-top: 0px;
+}
+.picture-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 20;
+}
+.picture-container .profileImg {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 54% right;
+}
+@media (max-width: 1024px) {
+  .about-text p {
+    line-height: 20px;
+  }
+  .picture .dots-svg {
+    width: 100px;
+    margin-left: 202px;
+    margin-top: -12px;
+  }
+  .picture-container {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .about-text p {
+    font-size: 14px;
+  }
+  .about-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .about-section {
+    padding: 0 20px;
+  }
+  .about-text h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .about-text p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .picture .dots-svg {
+    width: 60px;
+    margin-left: 158px;
+    margin-top: 0px;
+  }
+  .picture-container {
+    width: 200px;
+    height: 200px;
+  }
+}

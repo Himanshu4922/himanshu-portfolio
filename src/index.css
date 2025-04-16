@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: black;
+  --text-color: white;
+  --highlight-color: rgb(60, 207, 145);
+  --grey-text-color: rgb(143, 144, 148);
+  --button-background-color: rgba(41, 41, 41, 0.659);
+  --button-background-color-hover: #292929;
+  --border-color: rgb(30, 32, 41);
+  --card-background-color: rgb(8, 8, 8);
+  --article-card-background-color: rgba(17, 17, 17, 0.439);
+  --article-card-background-color-hover: rgba(17, 17, 17);
+
+  --header-logo-font: 32px;
+  --btn-and-nav-font: 16px;
+  --intro-hey-profession-font: 32px;
+  --intro-name-font: 124px;
+  --intro-specialized-font: 20px;
+
+  --about-title-font: 24px;
+  --about-text-font: 16px;
+
+  --projects-title-font: 24px;
+  --projects-text-font: 20px;
+
+  --project-card-title-font: 24px;
+  --project-card-text-font: 16px;
+
+  --techbar-font: 14px;
+
+  --article-title-font: 24px;
+  --article-link-font: 16px;
+
+  --article-card-title-font: 20px;
+  --article-card-time-font: 14px;
+
+  --footer-sec-title-font:48px;
+  --footer-sec-text-font:16px;
+
+  --projects-page-title-font:60px;
+  --projects-page-text-font:16px;
+
+}
+/* html {
+  overflow-x: hidden;
+} */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: #ffffff;
+  overflow-x: hidden;
+}

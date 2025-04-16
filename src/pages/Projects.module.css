@@ -1,0 +1,89 @@
+.projects-page-section {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0px 32px;
+  margin-top: -10px;
+}
+.projects-page-heading-container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.projects-page-heading-container h1 {
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+.projects-page-heading-container p {
+  font-weight: 400;
+  color: rgba(117, 117, 117, 0.788);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.projects-page-heading-container .input-container {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  padding-left: 12px;
+  width: 400px;
+}
+.projects-page-heading-container .input-container input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 16px;
+  padding: 10px 12px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+.projects-card-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 28px;
+}
+@media (max-width: 1280px) {
+  .projects-page-heading-container h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .projects-page-heading-container h1 {
+    font-size: 44px;
+    margin-bottom: 16px;
+    line-height: 48px;
+  }
+  .projects-page-heading-container p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 20px;
+  }
+  .projects-page-heading-container .input-container input {
+    font-size: 12px;
+  }
+  .projects-card-grid {
+    margin-top: 24px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .projects-page-section {
+    padding: 0px 20px;
+  }
+  .projects-page-heading-container h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 32px;
+  }
+  .projects-page-heading-container .input-container {
+    width: 300px;
+  }
+}

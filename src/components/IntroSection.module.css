@@ -1,0 +1,157 @@
+.intro-section {
+  margin-top: 100px;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 32px;
+  min-height: calc(100vh - 176px);
+}
+.intro {
+  margin-bottom: 20px;
+  position: relative;
+}
+.intro img {
+  position: absolute;
+  z-index: -1;
+  margin-top: -24px;
+  margin-left: -48px;
+  width: 168px;
+  animation-name: slide-down;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  opacity: 0;
+}
+.intro .hey {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--highlight-color);
+  animation-name: slide-down;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  opacity: 0;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.intro .name {
+  font-size: 123px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-color);
+  animation-name: slide-down;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  opacity: 0;
+}
+.profession {
+  margin-bottom: 28px;
+}
+.profession p {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--grey-text-color);
+  animation-name: slide-down;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  opacity: 0;
+}
+.specialized {
+  margin-bottom: 64px;
+  animation-name: slide-down;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  opacity: 0;
+}
+.specialized p {
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--grey-text-color);
+}
+@media (max-width: 1280px) {
+  .intro img{
+    width: 100px;
+    margin-left: -20px;
+  }
+  .intro .hey {
+    font-size: 28px;
+  }
+  .intro .name {
+    font-size: 104px;
+  }
+  .profession p {
+    font-size: 28px;
+  }
+  .specialized p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .intro img{
+    width: 90px;
+    margin-left: -20px;
+  }
+  .intro .hey {
+    font-size: 22px;
+  }
+  .intro .name {
+    font-size: 80px;
+  }
+  .profession p {
+    font-size: 22px;
+  }
+  .specialized p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .intro img {
+    width: 80px;
+    margin-top: -24px;
+    margin-left: -20px;
+  }
+  .intro .hey {
+    font-size: 20px;
+  }
+  .intro .name {
+    font-size: 52px;
+  }
+  .profession p {
+    font-size: 20px;
+  }
+  .specialized p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .intro-section {
+    padding: 0 20px;
+  }
+  .intro img {
+    width:60px;
+    margin-left: -10px;
+  }
+  .intro .hey {
+    font-size: 16px;
+  }
+  .intro .name {
+    font-size: 40px;
+  }
+  .profession p {
+    font-size: 16px;
+  }
+  .specialized{
+    margin-bottom: 36px;
+  }
+  .specialized p {
+    font-size: 12px;
+  }
+}

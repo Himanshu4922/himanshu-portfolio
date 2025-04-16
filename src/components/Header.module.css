@@ -1,0 +1,120 @@
+.header {
+  max-width: 1240px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 18px 32px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 100px;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 0px;
+  background-color: var(--background-color);
+  z-index: 10;
+}
+.header .logo {
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 32px;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.1s ease-in-out;
+}
+.header .logo:hover {
+  color: var(--highlight-color);
+}
+.header .logo span {
+  color: var(--grey-text-color);
+}
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: inherit;
+  transition: color 0.1s ease-in-out;
+}
+.nav a:hover {
+  color: var(--highlight-color);
+}
+.nav a button {
+  background-color: var(--button-background-color);
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color);
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+}
+.nav a button:hover {
+  color: var(--highlight-color);
+  cursor: pointer;
+  background-color: var(--button-background-color-hover);
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .hamburger-container {
+    width: 24px;
+    height: 24px;
+  }
+  .hamburger-container img {
+    width: 100%;
+    cursor: pointer;
+  }
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    gap: 24px;
+    background-color: rgb(8, 8, 8);
+    padding: 24px;
+    width: 300px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+    z-index: 20;
+  }
+  .nav-mobile img {
+    align-self: flex-end;
+    cursor: pointer;
+    width: 24px;
+  }
+  .nav-mobile a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.1s ease-in-out;
+    align-self: flex-start;
+  }
+  .nav-mobile a:hover {
+    color: var(--highlight-color);
+  }
+  .nav-open {
+    transform: translateX(0%);
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .nav-mobile img {
+    width: 20px;
+  }
+  .nav-mobile a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,60 @@
+.skill-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-name-and-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.skill-name-and-icon img {
+  width: 20px;
+}
+.skill-name-and-icon h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.skill-heading p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: rgb(156, 163, 175);
+}
+.progress-bar {
+  margin-top: 12px;
+  width: 100%;
+  height: 8px;
+  border-radius: 12px;
+  background-color: #1f2937;
+  overflow: hidden;
+}
+.progress-value {
+  height: 100%;
+  border-radius: 12px;
+  background-color: var(--highlight-color);
+}
+@media (max-width: 768px) {
+  .skill-name-and-icon h3 {
+    font-size: 14px;
+  }
+  .skill-heading p {
+    font-size: 14px;
+  }
+  .skill-name-and-icon img {
+    width: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .skill-name-and-icon h3 {
+    font-size: 12px;
+  }
+  .skill-heading p {
+    font-size: 12px;
+  }
+  .skill-name-and-icon img {
+    width: 16px;
+  }
+}

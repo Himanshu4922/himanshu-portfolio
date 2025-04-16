@@ -1,0 +1,44 @@
+.skills {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 18px 32px;
+  margin-top: 80px;
+}
+.skills h1 {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.skills-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+  row-gap: 32px;
+}
+@media (max-width: 768px) {
+  .skills {
+    margin-top: 40px;
+  }
+  .skills h1 {
+    font-size: 24px;
+  }
+  .skills-grid {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .skills {
+    margin-top: 22px;
+  }
+  .skills h1 {
+    font-size: 18px;
+  }
+  .skills-grid {
+    margin-top: 12px;
+    row-gap: 24px;
+  }
+}
