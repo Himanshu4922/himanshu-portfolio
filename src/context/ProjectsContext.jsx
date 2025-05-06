@@ -6,6 +6,7 @@ import reactIcon from "../assets/reactIcon.svg";
 import htmlIcon from "../assets/htmlIcon.svg";
 import cssIcon from "../assets/cssIcon.svg";
 import portfolioImg from "../assets/portfolioImg.png";
+import educaseIndiaImg from "../assets/educaseIndiaImg.png";
 
 export const ProjectsContext = createContext();
 
@@ -103,6 +104,39 @@ export function ProjectsContextProvider({ children }) {
       description:
         "A personal portfolio website to showcase my projects, skills, and experiences with a responsive design and smooth user experience.",
       projectImage: portfolioImg,
+    },
+    {
+      title: "Login & Signup Feature for Educase India",
+      techStack: [
+        {
+          techName: "Javascript",
+          techIcon: jsIcon,
+          color: "rgb(250, 240, 137)",
+          bgColor: "rgba(250, 240, 137, 0.329)",
+        },
+        {
+          techName: "HTML",
+          techIcon: htmlIcon,
+          color: "rgb(241, 101, 41)",
+          bgColor: "rgba(241, 101, 41, 0.322)",
+        },
+        {
+          techName: "CSS",
+          techIcon: cssIcon,
+          color: "rgb(51, 170, 221)",
+          bgColor: "rgba(51, 170, 221, 0.358)",
+        },
+        {
+          techName: "React",
+          techIcon: reactIcon,
+          color: "rgb(144, 206, 244)",
+          bgColor: "rgba(144, 206, 244, 0.337)",
+        },
+      ],
+      link: "https://educase-india-six.vercel.app/",
+      description:
+        "Developed a secure and user-friendly login and signup functionality as part of an assignment for EducaSendia. The system includes form validation, user authentication logic, and responsive UI design.",
+      projectImage: educaseIndiaImg,
     },
   ];
 
