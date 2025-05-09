@@ -17,7 +17,7 @@ function ProjectsSection() {
           <p>Here's some of my projects that I have worked on.</p>
           <Link to="/projects">Explore more &rarr;</Link>
         </div>
-        {projects.slice(0,2).map(function (project) {
+        {projects.slice(0,3).map(function (project) {
           return <ProjectCard project={project} key={project.title} />;
         })}
       </section>

@@ -7,11 +7,39 @@ import htmlIcon from "../assets/htmlIcon.svg";
 import cssIcon from "../assets/cssIcon.svg";
 import portfolioImg from "../assets/portfolioImg.png";
 import educaseIndiaImg from "../assets/educaseIndiaImg.png";
+import miniReactImg from "../assets/miniReactImg.png";
 
 export const ProjectsContext = createContext();
 
 export function ProjectsContextProvider({ children }) {
   const projects = [
+    {
+      title: "Mini React Clone (Custom JavaScript Rendering Engine)",
+      techStack: [
+        {
+          techName: "Javascript",
+          techIcon: jsIcon,
+          color: "rgb(250, 240, 137)",
+          bgColor: "rgba(250, 240, 137, 0.329)",
+        },
+        {
+          techName: "HTML",
+          techIcon: htmlIcon,
+          color: "rgb(241, 101, 41)",
+          bgColor: "rgba(241, 101, 41, 0.322)",
+        },
+        {
+          techName: "CSS",
+          techIcon: cssIcon,
+          color: "rgb(51, 170, 221)",
+          bgColor: "rgba(51, 170, 221, 0.358)",
+        },
+      ],
+      link: "https://github.com/Himanshu4922/myOwnReact",
+      description:
+        "A simplified reimplementation of React’s core functionality built from scratch using vanilla JavaScript. This project showcases how JSX like elements are manually transformed into DOM elements and rendered onto the page without using any third party library.",
+      projectImage: miniReactImg,
+    },
     {
       title: "Rest Countries API",
       techStack: [
