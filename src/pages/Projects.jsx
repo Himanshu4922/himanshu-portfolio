@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useMemo } from "react";
 import styles from "./Projects.module.css";
 import searchIcon from "../assets/search.svg";
 import ProjectCard from "./../components/ProjectCard";
@@ -19,10 +19,25 @@ function Projects() {
     );
   }
 
+  function debounce(cb, waitTime) {
+    let timerId;
+    return function (...args) {
+      clearTimeout(timerId);
+      timerId = setTimeout(function () {
+        cb(...args);
+      }, waitTime);
+    };
+  }
+
+  const debouncedHandleFilterProjects = useMemo(
+    () => debounce(handleFilterProjects, 400),
+    []
+  );
+
   function handleInputChange(e) {
     if (/^$|^[^0-9]+$/.test(e.target.value.trimStart())) {
       setInputText(e.target.value.trimStart());
-      handleFilterProjects(e.target.value.trimStart());
+      debouncedHandleFilterProjects(e.target.value.trimStart());
     }
   }
 
